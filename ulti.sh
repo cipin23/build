@@ -7,7 +7,9 @@
 # ============================================================
 set -e
 git clone https://github.com/cipin23/vendor -b a02_vendor
-mv vendor/* .
+cd ${GITHUB_WORKSPACE}
+ls
+mv vendor/vendor/* .
 cd /tmp/android_build 2>/dev/null || { mkdir -p /tmp/android_build && cd /tmp/android_build; }
 
 # ============================================================
