@@ -6,6 +6,8 @@
 # (tinggal jalanin lagi dari awal, bagian yang udah fixed bakal no-op).
 # ============================================================
 set -e
+git clone https://github.com/cipin23/vendor -b a02_vendor
+mv vendor/* .
 cd /tmp/android_build 2>/dev/null || { mkdir -p /tmp/android_build && cd /tmp/android_build; }
 
 # ============================================================
@@ -20,8 +22,8 @@ sudo apt-get install -y \
     squashfs-tools xsltproc zip zlib1g-dev python3 python3-pip openjdk-8-jdk \
     git-lfs
 
-git config --global user.name "[ISI nama]"
-git config --global user.email "[ISI email]"
+git config --global user.name "dextro23"
+git config --global user.email "dextro23@gmail.coom"
 git config --global color.ui true
 
 mkdir -p ~/bin
